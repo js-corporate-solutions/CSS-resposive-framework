@@ -1,0 +1,346 @@
+/*!
+    @namespace Standard CSS file
+    @author J'S CORPORATE SERVICES (PVT) LTD (Registration number in Sri Lanka PV 00270685)
+    @website https://js-corporate-solutions.lk/
+    @description The purpose of the CSS file is to have an easy CSS framework for our company's web development.
+    @compatibility This file should be compatible with all browsers as we use standard CSS.
+    @contributors Jeewaka Karunaratne and research on BARD AI (Google).
+    @date 2024-02-04
+    @license MIT License.
+    @version 1.0
+*/
+
+
+
+/* -- --------------------------------------------------------------
+# General
+-------------------------------------------------------------- -- */
+/* Basic container styling */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Basic row styling */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Basic column styling */
+.col-1, .col-2, .col-3, /* ... */ .col-12 {
+  flex: 0 0 auto;
+  padding: 1rem;
+}
+
+/* Individual column styling */
+.col-1 {width: 10%;}
+.col-2 {width: 10%;}
+.col-3 {width: 10%;}
+.col-4 {width: 10%;}
+.col-5 {width: 10%;}
+.col-6 {width: 10%;}
+.col-7 {width: 10%;}
+.col-8 {width: 10%;}
+.col-9 {width: 10%;}
+.col-10 {width: 10%;}
+
+/* body styling */
+body {
+  font-family: sans-serif; /* Set a default font family */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-color: #f0f0f0; /* Set a background color */
+}
+
+/* Headings styling */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold; /* Bold text for headings */
+  margin-top: 0; /* Collapse top margin */
+}
+h1 { font-size: 2em; } /* Size headings appropriately */
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.6em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1em; }
+
+/* Paragraphs styling */
+p {
+  margin: 1em 0; /* Add spacing between paragraphs */
+  line-height: 1.6; /* Set comfortable line height */
+}
+
+/* Quotes styling */
+q {
+  quotes: '"' '"'; /* Set default quotation marks */
+}
+
+/* Lists styling */
+ul, ol {
+  margin: 1em 0; /* Add spacing around lists */
+  padding: 0; /* Remove default padding */
+  list-style-position: inside; /* Place list markers inside elements */
+}
+li {
+  margin-bottom: 0.5em; /* Add spacing between list items */
+}
+
+/* Images styling */
+img {
+  max-width: 100%; /* Prevent images from overflowing containers */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Divisions styling */
+div {
+  margin-bottom: 1em; /* Add spacing between divisions */
+}
+
+/* Spans styling */
+span {
+  /* No default styling necessary for spans */
+}
+
+/* Line breaks styling */
+br {
+  display: block; /* Ensure line breaks create new lines */
+}
+
+/* Horizontal rules styling */
+hr {
+  margin-top: 1em; /* Add spacing before horizontal rules */
+  margin-bottom: 1em; /* Add spacing after horizontal rules */
+  border: 0; /* Remove default border */
+  border-top: 1px solid #ccc; /* Set a light gray border */
+}
+
+/* Navigation links styling */
+a {
+  color: #007bff; /* Blue link color */
+  text-decoration: none; /* Remove default underline */
+}
+
+a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Address styling */
+address {
+  display: block; /* Ensure address content starts on a new line */
+  margin-bottom: 1rem; /* Add spacing below the address */
+  font-style: italic; /* Italicize text for subtle emphasis */
+}
+
+/* Button styling */
+button {
+  display: inline-block; /* Ensure buttons behave as inline elements but can have width and height */
+  padding: 10px 20px; /* Add padding for comfortable clicking area */
+  background-color: #007bff; /* Blue background (adjust as needed) */
+  color: #fff; /* White text for contrast */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners for visual appeal */
+  cursor: pointer; /* Indicate interactivity */
+  font-weight: 500; /* Slightly bolder text */
+}
+
+button:hover {
+  background-color: #0069d9; /* Slightly darker background on hover */
+}
+
+button:disabled {
+  opacity: 0.5; /* Reduce opacity for disabled buttons */
+  cursor: default; /* Change cursor to indicate disabled state */
+}
+
+/* Basic table styling */
+table {
+  border-collapse: collapse; /* Combine adjacent borders */
+  width: 100%; /* Fill available space */
+  margin-bottom: 1rem; /* Add spacing after table */
+}
+
+th, td {
+  padding: 8px; /* Add padding for cell content */
+  text-align: left; /* Align text to left by default */
+  border: 1px solid #ddd; /* Add a light gray border */
+}
+
+th {
+  background-color: #f2f2f2; /* Light gray background for headers */
+  font-weight: bold; /* Bold text for headers */
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9; /* Alternate row background color */
+}
+
+
+/* Form styling */
+form {
+  margin: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"], input[type="email"], textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  /* Use button styles from above */
+}
+
+/* -- --------------------------------------------------------------
+# Responsive
+-------------------------------------------------------------- -- */
+/* For desktop resolutions */
+@media screen and (min-width: 1920px) {
+.col-1 {width: 100%;}
+.col-2 {width: 0%;}
+.col-3 {width: 0%;}
+.col-4 {width: 0%;}
+.col-5 {width: 0%;}
+.col-6 {width: 0%;}
+.col-7 {width: 0%;}
+.col-8 {width: 0%;}
+.col-9 {width: 0%;}
+.col-10 {width:0%;}
+}
+
+@media screen and (min-width: 1366px) {
+
+}
+
+@media screen and (min-width: 1536px) {
+
+}
+
+@media screen and (min-width: 1440px) {
+
+}
+@media screen and (min-width: 1280px) {
+
+}
+@media screen and (min-width: 1600px) {
+
+}
+@media screen and (min-width: 2560px) {
+
+}
+
+/* For mobile resolutions */
+@media screen and (min-width: 360px) {
+.col-1 {width: 100%;}
+.col-2 {width: 10%;}
+.col-3 {width: 10%;}
+.col-4 {width: 10%;}
+.col-5 {width: 10%;}
+.col-6 {width: 10%;}
+.col-7 {width: 10%;}
+.col-8 {width: 10%;}
+.col-9 {width: 10%;}
+.col-10 {width: 10%;}
+}
+
+@media screen and (min-width: 390px) {
+
+}
+
+@media screen and (min-width: 410px) {
+
+}
+
+@media screen and (min-width: 420px) {
+
+}
+@media (max-width: 768px) {
+  /* Collapse small-sized tables */
+  table {
+    display: block;
+  }
+  th, td {
+    width: 100%; /* Make cells full width */
+    display: block; /* Stack cells vertically */
+    border: 1px solid transparent; /* Hide table borders */
+    border-bottom: 1px solid #ddd; /* Add bottom border for each row */
+  }
+  th:first-child, td:first-child {
+    border-top: 1px solid #ddd; /* Add top border for first row */
+  }
+}
+
+
+
+/* For tablet resolutions */
+@media (max-width: 768px) {
+  /* Collapse small-sized tables */
+  table {
+    display: block;
+  }
+  th, td {
+    width: 100%; /* Make cells full width */
+    display: block; /* Stack cells vertically */
+    border: 1px solid transparent; /* Hide table borders */
+    border-bottom: 1px solid #ddd; /* Add bottom border for each row */
+  }
+  th:first-child, td:first-child {
+    border-top: 1px solid #ddd; /* Add top border for first row */
+  }
+}
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 810px) {
+
+}
+
+@media screen and (min-width: 1280px) {
+
+}
+
+@media screen and (min-width: 800px) {
+
+}
+@media screen and (min-width: 1024px) {
+
+}
+
+
+
+
+
+<!-- example -->
+media screen and (min-width: 480px) {
+  #leftsidebar {width: 200px; float: left;}
+  #main {margin-left: 216px;}
+}
+
+media screen and (max-width: 600px) {
+  div.example {
+    display: none;
+  }
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+media screen and (max-width: 992px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
